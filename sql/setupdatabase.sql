@@ -31,15 +31,6 @@ CREATE TABLE salary (
 );
 
 
-
-
-
-
-
-
-
-
-
 --ข้อมูลซัพพลาย
 CREATE TABLE supplier (
     supplier_id INT AUTO_INCREMENT PRIMARY KEY,
