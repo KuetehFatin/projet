@@ -1,0 +1,19 @@
+<?php
+include('config.php');
+?>
+<?php
+$strOrderdetailID = $_GET["Orderdetailid"];
+$sql = "DELETE FROM orderdetail
+WHERE Orderdetailid = '".$strOrderdetailID."' ";
+
+
+$query = mysqli_query($connect,$sql);
+
+if ($connect->query($sql) === TRUE) {
+    echo "Record deleted successfully";
+      header('Location:show_customer.php');
+} else {
+    echo "Error deleting record: " . $connect->error;
+}
+
+ ?>

@@ -15,6 +15,7 @@ CREATE TABLE customers (
 CREATE TABLE employee (
     employee_id INT AUTO_INCREMENT PRIMARY KEY,
     employee_name VARCHAR(255) NOT NULL,
+    employee_email VARCHAR(255) NOT NULL,
     employee_tel VARCHAR(10) NOT NULL,
     employee_address VARCHAR(255) NOT NULL,
     employee_position VARCHAR(255) NOT NULL

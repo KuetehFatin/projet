@@ -1,0 +1,56 @@
+<?php
+include('config.php');
+$id = $_REQUEST['Orderdetailid'];
+echo $id;
+  $sql = "SELECT * FROM orderdetail WHERE Orderdetailid =".$id;
+  $result = mysqli_query($connect, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+
+?>
+<H1>แก้ไขรายละเอียดการสั่งซื้อ</H1>
+<form method="post" action="update.php">
+    <table width=500 border=0><br>
+    <tr>
+        <td>OrderdetailID:</td>
+        <td><input type="text" name="Orderdetailid" value="<?php echo $row['Orderdetailid']; ?>"></td>
+    </tr>
+    <tr>
+        <td>Customername:</td>
+        <td><input type="text" name="Customername" value="<?php echo $row['Customername']; ?>"></td>
+    </tr>
+    <tr>
+        <td>Productid:</td>
+        <td><input type="text" name="Productid" value="<?php echo $row['Productid']; ?>"></td>
+    </tr>
+    <tr>
+        <td>Quantity:</td>
+        <td><input type="text" name="Quantity" value="<?php echo $row['Quantity']; ?>"></td>
+    </tr>
+    <tr>
+        <td> Totalprice:</td>
+        <td><input type="text" name=" Totalprice" value="<?php echo $row[' Totalprice']; ?>"></td>
+    </tr>
+    <tr>
+        <td>Slip:</td>
+        <td><input type="text" name="Slip" value="<?php echo $row['Slip']; ?>"></td>
+    </tr>
+    <tr>
+        <td colspan=2><center>
+            <input type="submit" name="submit" value="Submit">
+        </center></td>
+    </tr>
+    </table>
+</form>
+
+<?php
+
+
+}
+} else {
+echo "0 results";
+}
+
+?>
