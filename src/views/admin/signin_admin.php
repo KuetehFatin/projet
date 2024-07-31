@@ -1,88 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>ลงทะเบียน</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        .container img {
-            width: 250px;
-            height: auto;
-            display: block;
-            margin: 0 auto 20px;
-        }
-        .form-row {
-            margin-bottom: 15px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lissa Shop</title>
+<link rel="stylesheet" href="sign-in.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
-
 <body>
-    <form action="login_admin.php" method="post">
-        <div class="container">
-            <form action="product.php" method="post">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content rounded-4 shadow">
-                        <div class="modal-header p-5 pb-4 border-bottom-0">
-                            <h1 class="fw-bold mb-0 fs-2">ลงทะเบียน</h1>
-                        </div>
-                        <div class="modal-body p-5 pt-0">
-                            <div class="row form-row">
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-3" id="floatingFirstName" placeholder="ชื่อ">
-                                        <label for="floatingFirstName">ชื่อ</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-3" id="floatingLastName" placeholder="นามสกุล">
-                                        <label for="floatingLastName">นามสกุล</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control rounded-3" id="floatingAddress" placeholder="เบอร์โทรศัพท์">
-                                <label for="floatingTel">เบอร์โทรศัพท์</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control rounded-3" id="floatingAddress" placeholder="ที่อยู่">
-                                <label for="floatingAddress">ที่อยู่</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control rounded-3" id="floatingEmail" placeholder="อีเมล">
-                                <label for="floatingEmail">อีเมล</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="รหัสผ่าน">
-                                <label for="floatingPassword">รหัสผ่าน</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="ยืนยันรหัสผ่าน">
-                                <label for="floatingConfirmPassword">ยืนยันรหัสผ่าน</label>
-                            </div>
-                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Register</button>
-                            <hr class="my-4">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+<body class="d-flex align-items-center justify-content-center vh-100"></body>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    </form>
+<main class="form-signin w-100 m-auto">
+  <form>
+    <h1 class="h3 mb-3 fw-normal">sign up</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control my-2" id="floatingInput" placeholder="enter your username...">
+      <label for="Username">Email address</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="email" class="form-control my-2" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control my-2" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="password" class="form-control my-2" id="floatingPassword" placeholder="Confirm Password">
+      <label for="ConfirmPassword">Password</label>
+    </div>
+
+    <button class="btn btn-primary w-100 py-2" type="submit">Sign in <a href="login_admin.php"</button>
+  </form>
+</main>
+    
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+
 </body>
-
 </html>

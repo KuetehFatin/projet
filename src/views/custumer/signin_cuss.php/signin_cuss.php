@@ -9,11 +9,16 @@
 
 </head>
 <body>
-
 <body class="d-flex align-items-center justify-content-center vh-100"></body>
+
 <main class="form-signin w-100 m-auto">
   <form>
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <h1 class="h3 mb-3 fw-normal">sign up</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control my-2" id="floatingInput" placeholder="enter your username...">
+      <label for="Username">Email address</label>
+    </div>
 
     <div class="form-floating">
       <input type="email" class="form-control my-2" id="floatingInput" placeholder="name@example.com">
@@ -24,8 +29,12 @@
       <label for="floatingPassword">Password</label>
     </div>
 
+    <div class="form-floating">
+      <input type="password" class="form-control my-2" id="floatingPassword" placeholder="Confirm Password">
+      <label for="ConfirmPassword">Password</label>
+    </div>
+
     <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-body-secondary">สำหรับลูกค้าที่ยังไม่ลงทะเบียน คลิ๊กที่นี่เพื่อ <a href="signin_admin.php">ลงทะเบียน</p>
   </form>
 </main>
     

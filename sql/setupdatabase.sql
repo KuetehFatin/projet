@@ -6,9 +6,13 @@ CREATE TABLE customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_name VARCHAR(255) NOT NULL,
     customer_email VARCHAR(255) NOT NULL,
+    customer_password VARCHAR(255) NOT NULL,
     customer_tel VARCHAR(10) NOT NULL,
     customer_address VARCHAR(255) NOT NULL
+    
 );
+
+
 
 
 --สร้างตารางพนักงาน
@@ -16,6 +20,7 @@ CREATE TABLE employee (
     employee_id INT AUTO_INCREMENT PRIMARY KEY,
     employee_name VARCHAR(255) NOT NULL,
     employee_email VARCHAR(255) NOT NULL,
+    employee_password VARCHAR(255) NOT NULL,
     employee_tel VARCHAR(10) NOT NULL,
     employee_address VARCHAR(255) NOT NULL,
     employee_position VARCHAR(255) NOT NULL
@@ -30,7 +35,7 @@ CREATE TABLE salary (
     salary_amount DECIMAL(10,2) NOT NULL,
     FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
 );
-
+.
 
 --ข้อมูลซัพพลาย
 CREATE TABLE supplier (

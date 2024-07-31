@@ -25,7 +25,7 @@
     </div>
 
     <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-body-secondary">สำหรับลูกค้าที่ยังไม่ลงทะเบียน คลิ๊กที่นี่เพื่อ <a href="signin_admin.php">ลงทะเบียน</p>
+    <p class="mt-5 mb-3 text-body-secondary">สำหรับลูกค้าที่ยังไม่ลงทะเบียน คลิ๊กที่นี่เพื่อ <a href="signin_cuss.php">ลงทะเบียน</p>
   </form>
 </main>
     
